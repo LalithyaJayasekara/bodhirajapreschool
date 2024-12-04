@@ -1,9 +1,9 @@
 /* Navbar Container */
 .nav {
   position: fixed;
-  top: 10px;
-  left: 10px;
-  width: 95%;
+  top: 5px;
+  left: 5px;
+  width: 99%;
   background: linear-gradient(90deg, #98fb98, #2e8b57, #3b7d3c);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
   padding: 8px 2px;
