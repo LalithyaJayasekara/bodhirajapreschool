@@ -1,0 +1,117 @@
+/* Apply a white background to the entire webpage */
+.add-grades-body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* AddGrades form styles */
+.grade-bottle-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Slimmer width */
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Form height fits the full webpage without scrolling */
+    box-sizing: border-box; /* Ensures padding doesn't increase form size */
+    overflow: hidden; /* Prevents overflow */
+}
+
+/* Flexbox layout for label and input pair */
+.form-bottle-group {
+    position: relative; /* Ensures the error messages don't break the layout */
+    display: flex;
+    justify-content: space-between; /* Labels and inputs on the same line */
+    align-items: center; /* Vertically align labels and inputs */
+    margin-bottom: 20px;
+}
+
+.grade-bottle-form label {
+    width: 40%; /* Adjust label width to align with input */
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+.grade-bottle-form input,
+.grade-bottle-form select {
+    width: 55%; /* Ensure consistent width for input and select boxes */
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 12px;
+    color: black;
+    box-sizing: border-box;
+}
+
+/* Subject selection row */
+.subjects-bottle-row {
+    display: flex;
+    flex-direction: column; /* Stack subject selections vertically */
+}
+
+/* Individual subject container */
+.subject-bottle {
+    margin-bottom: 15px; /* Space between subjects */
+    display: flex;
+    justify-content: space-between;
+}
+
+.subject-bottle select,
+.subject-bottle input {
+    width: 55%;
+}
+
+/* Error message styles */
+.error-message {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(5px); /* Slight offset to place it below input */
+}
+
+/* Error highlighting */
+input.error, select.error {
+    border-color: red;
+    height: 500px;
+}
+
+/* Button styles */
+button {
+    background-color: #a4c639;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 20px;
+    width: 50%;
+    font-size: 18px;
+}
+
+button[type="submit"]:disabled {
+    background-color: #ddd;
+}
+
+/* Submit message styles */
+.submit-bottle-message {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}

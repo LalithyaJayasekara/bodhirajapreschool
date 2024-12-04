@@ -1,0 +1,115 @@
+/* Container for form and steps */
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Step Indicator */
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step {
+    width: 50px;
+    height: 50px;
+    background-color: #d6dbd6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.active-step {
+    background-color: #6e9f6e;
+}
+
+/* Step Titles */
+.step-titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.step-titles p {
+    flex: 1;
+    text-align: center;
+    color: #6e9f6e;
+    font-weight: bold;
+}
+
+/* Form */
+.form {
+    background-color: #e6ebe6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+/* File Upload */
+input[type="file"] {
+    border: none;
+    font-size: 14px;
+}
+
+/* Button */
+.next-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #333;
+}

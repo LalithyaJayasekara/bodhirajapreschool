@@ -1,0 +1,48 @@
+.admissions-page {
+    font-family: Arial, sans-serif; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #006400;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-title {
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .navbar a {
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .login-button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .banner {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .banner-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .banner-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }

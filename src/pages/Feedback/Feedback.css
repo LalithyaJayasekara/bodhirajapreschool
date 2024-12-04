@@ -1,0 +1,146 @@
+.feedback-form-container {
+  background-color: #306E36;
+  padding: 40px; /* Increased padding for better space around content */
+  border-radius: 12px; /* More rounded corners for a sleek, modern look */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for better depth */
+  width: 100%;
+  max-width: 95%; /* Restrict max-width for better alignment */
+  margin: 50px auto; /* Center form with vertical space */
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid #ddd; /* Subtle border for a clean separation */
+  background-image: linear-gradient(135deg, #3b7b33, #61a14f); /* Gradient background for a lively feel */
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: white;
+  background-color: #006400; /* Use theme color */
+  padding: 12px 20px; /* Add padding to make the header more prominent */
+  border-radius: 8px; /* Rounded corners for header */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for header */
+}
+
+.rating-section p,
+.feedback-section p,
+.email-section p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ddd;
+  font-weight: 600; /* Bold text for section titles */
+}
+
+.stars {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 30px;
+  font-size: 36px; /* Larger star icons for better visibility */
+  justify-content: center; /* Center stars horizontally */
+}
+
+.stars span {
+  cursor: pointer;
+  color: #ddd; /* Default light color for stars */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.stars span.filled {
+  color: gold; /* Filled star color */
+}
+
+.stars span:hover {
+  color: #f5d700; /* Bright gold on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+textarea {
+  width: 100%;
+  max-width: 800px; /* Prevent stretch on larger screens */
+  height: 120px;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px; /* More rounded corners */
+  resize: none;
+  margin-bottom: 30px;
+  font-size: 16px;
+  background-color: #f8f8f8; /* Light background for clarity */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Border color transition */
+}
+
+textarea:focus {
+  border-color: #f5d700; /* Highlight border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+input[type="email"] {
+  width: 100%;
+  max-width: 800px;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+  border-color: #f5d700; /* Highlight border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.submit-btn {
+  background-color: #234430;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  width: auto;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 30px;
+  letter-spacing: 1px; /* Slight letter-spacing for a cleaner look */
+}
+
+.submit-btn:hover {
+  background-color: #e1c300;
+  color: #234430;
+  transform: scale(1.1); /* Zoom in effect on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+.submit-btn:active {
+  transform: scale(1); /* Reset button size on click */
+}
+
+.submit-btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.7); /* Gold outline when focused */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .feedback-form-container {
+    padding: 20px; /* Adjust padding for mobile view */
+  }
+
+  h2 {
+    font-size: 26px; /* Adjust header size */
+  }
+
+  textarea, input[type="email"], .submit-btn {
+    width: 100%;
+    max-width: 100%; /* Full-width inputs on small screens */
+  }
+
+  .stars {
+    font-size: 30px; /* Adjust star size on mobile */
+  }
+}

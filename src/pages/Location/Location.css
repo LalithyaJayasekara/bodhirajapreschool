@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  
+  .locate-us {
+    padding: 50px;
+  }
+  
+  .location-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .location-info {
+    width: 50%;
+    text-align: left;
+    
+  }
+  
+  .location-info h2 {
+    color: #ffffff;
+  }
+  
+  .direction-button, .nearby-button {
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .location-info p {
+    margin: 10px 0;
+  }
+  
+  .location-info h3 {
+    margin-top: 20px;
+  }
+  
+  .location-info ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .location-info ul li {
+    margin: 5px 0;
+  }
+  
+  .map-container {
+    width: 45%;
+  }
+  
+  .map-section .gmap-frame #gmap_canvas {
+    width: 100%;
+    height: 65vh;
+    border-radius: 5px;
+    padding: auto;
+  }
+  
+
+  .footer {
+    background-color: #006400;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    border-top: 5px solid #004d00; /* Adds a visual separation from the content */
+    margin-left: -20px;
+  }
+  
+  .footer-logo {
+    width: 50px;
+    margin-bottom: 10px;
+    margin-left: 1350px;
+  }
+  
+  .email-p {
+    margin-left: 0px;
+    text-align: right;
+    font-size: 0.9rem; /* Slightly smaller font for footer details */
+  }
+  
+  .footer-text p {
+    margin: 10px 0;
+    text-align: right;
+    font-size: 0.9rem; /* Slightly smaller font for footer details */
+  }
+  
+  /* Banner modifications */
+  
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the banner vertically */
+  }
+  
+  .banner-title {
+    max-width: 900px; /* Adjust the maximum width as needed */
+    text-align: center; /* Center the banner title */
+  }
+  
+  .banner-text {
+    max-width: 600px; /* Adjust the maximum width as needed */
+    text-align: center; /* Center the banner text */
+  }
+  

@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color: #006400;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-button {
+  background-color: #eb9327;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center; /* Changed to center for better alignment */
+  padding: 20px;
+  background-image: url('../../Assets/back.jpg');
+  background-size: cover;
+  background-position: center; /* Centered background image */
+  height: 100vh;
+  animation: backgroundAnimation 30s infinite alternate; /* Added animation */
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: center top; /* Start position */
+  }
+  100% {
+    background-position: center bottom; /* End position */
+  }
+}
+
+.hero-section h1 {
+  color: white;
+  font-size: 90px;
+  margin-right: 0; /* Removed excessive margin */
+  margin-top: 100px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.486); /* Added text shadow for depth */
+  background-color: rgba(0, 0, 0, 0.322); /* Add a semi-transparent black background */
+  padding: 10px; /* Add padding for spacing */
+  border-radius: 10px;
+}
+
+.school-logo {
+  opacity: 0%;
+  margin-top: 10px;
+}
+
+.features {
+  display: flex;
+  justify-content: center; /* Center the boxes horizontally */
+  align-items: center; /* Align items vertically */
+  margin-top: 10px;
+  gap: 10px; /* Small spacing between boxes */
+  flex-wrap: nowrap; /* Ensure boxes stay in one line */
+  padding: 10px; /* Add padding around the container */
+}
+
+.feature {
+  background: linear-gradient(135deg, #306E36, #4CAF50); /* Gradient background */
+  color: white;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 20px; /* Smaller padding */
+  width: 130px; /* Adjust width for smaller boxes */
+  height: 120px; /* Smaller height */
+  text-align: center;
+  font-size: 16px; /* Smaller font size */
+  opacity: 90%;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%; /* Circular decoration */
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%; /* Circular decoration */
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+  transform: scale(1.05); /* More noticeable enlargement on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.feature:hover::before,
+.feature:hover::after {
+  transform: scale(1.5); /* Animate decorations on hover */
+}
+
+.feature i {
+  font-size: 30px; /* Smaller icon size */
+  margin-bottom: 5px;
+  display: block;
+}
+
+.feature span {
+  font-size: 14px; /* Adjust text size */
+  position: relative;
+  z-index: 2;
+}
+
+
+.feature img {
+  max-width: 70px; /* Example for small images or icons */
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Vision & Mission Section */
+.vision-mission {
+  display: flex;
+  flex-direction: row; /* Align boxes horizontally */
+  justify-content: center; /* Center horizontally */
+  align-items: stretch; /* Ensure all boxes have the same height */
+  padding: 50px;
+  background-color: #f0f0f0; /* Light background for contrast */
+  gap: 20px; /* Add spacing between the boxes */
+  margin-top: 15px;
+  flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
+}
+
+.vision-mission .vision,
+.vision-mission .mission {
+  flex: 1 1 45%; /* Equal size for both boxes, responsive */
+  height: auto;
+  max-width: 600px; /* Optional: limit the width on larger screens */
+  background-color: white; /* White background for contrast */
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  border-radius: 15px; /* Rounded corners for a modern look */
+  border: 1px solid #ddd; /* Subtle border for separation */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; /* Ensure content stacks vertically */
+  justify-content: space-between; /* Space content evenly */
+}
+
+.vision-mission .vision:hover,
+.vision-mission .mission:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+.vision-mission h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #b8d8bb; /* Use the green theme color */
+  text-transform: uppercase; /* Make headings uppercase */
+}
+
+.vision-mission p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333; /* Use a neutral color for text */
+}
+
+
+
+/* Event Card */
+.event-card {
+  display: flex;
+  align-items: center;
+  background-color: #f8f1f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.event-card img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.event-info {
+  margin-left: 20px;
+}
+
+.event-info h2 {
+  color: white; /* Change the color of the event title */
+}
+
+.see-more {
+  display: block;
+  margin-top: 10px;
+  color: #006400;
+  text-decoration: none;
+}
+
+/* Adjust the width of the rectangular elements and remove the green box */
+.feature,
+.vision,
+.mission {
+  width: 400px; /* Adjust the width as needed */
+}
+
+.our-events {
+  background-color: transparent; /* Remove the green background */
+}

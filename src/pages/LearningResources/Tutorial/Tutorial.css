@@ -1,0 +1,114 @@
+/* Specific background color for Tutorial page */
+.tutorial-page {
+  background-color: #fff; /* Changed background to white */
+  min-height: 100vh; /* Ensure it covers full height */
+  padding: 20px;
+}
+
+.learning-resources-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* Changed card background to white */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+h3 {
+  color: #006400; /* Dark green heading */
+}
+
+h4 {
+  color: #228b22; /* Forest green subheading */
+}
+
+.section {
+  margin-bottom: 50px;
+  padding: 15px;
+}
+
+/* Horizontal scroller for each category */
+.category-scroller {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory; /* Snap scroll for better experience */
+}
+
+.category-card {
+  flex: 0 0 auto;
+  width: 300px;
+  background-color: #fff; /* Card color set to white */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  scroll-snap-align: start; /* Aligns the card with the start of the scroller */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Horizontal scroller for videos */
+.video-scroller {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory; /* Snap scroll for better experience */
+}
+
+.video-scroller iframe {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 180px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start; /* Aligns iframe with the start of the scroller */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-scroller iframe:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff; /* Set body background to white */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .video-scroller iframe {
+    width: 250px;
+    height: 150px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}

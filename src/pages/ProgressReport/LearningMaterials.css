@@ -1,0 +1,33 @@
+.learning-materials-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    position: fixed; /* Make the navigation bar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure it spans the full width of the screen */
+  z-index: 1000; /* Ensure the navbar stays on top */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .learning-materials-container h2 {
+    color: #ffffff;
+  }
+  
+  .learning-materials-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .learning-materials-container li {
+    margin: 10px 0;
+  }
+  
+  .learning-materials-container a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .learning-materials-container a:hover {
+    text-decoration: underline;
+  }

@@ -1,0 +1,250 @@
+.dashboard-door {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.header-door {
+  background-color: #3E553A;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.main-content-door {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+
+.class-info-door {
+  width: 50%; /* Adjusts the table width to half of the screen */
+}
+
+.class-info-door h1 {
+  font-size: 32px;
+}
+
+.search-box-door {
+  display: flex;
+  align-items: center; /* Align search box and button on the same line */
+}
+
+.search-box-door input {
+  width: 70%;
+  height: 36px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-box-door button {
+  width: 150px;
+  height: 36px;
+  padding: 0 20px;
+  background-color: #2E582D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search-box-door button:hover {
+  background-color: #45a049;
+}
+
+.student-table-door {
+  width: 150%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.student-table-door th, .student-table-door td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.student-table-door th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.student-info-door {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #f4f4f4;
+  padding: 30px; /* Increased height and width */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.student-photo-door {
+  width: 150px;
+  height: 100px;
+  border-radius: 0%;
+  margin-right: 60px;
+}
+
+.student-details-door {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-details-door p {
+  margin: 0;
+  color: #333;
+}
+
+.sidebar-buttons-container-door {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-btn-door {
+  width: 200px;
+  height: 50px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sidebar-btn-door:hover {
+  background-color: #45a049;
+}
+
+.footer-door {
+  display: none; /* Remove footer */
+}
+
+/* Modal overlay */
+.modal-overlay-door {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal box */
+.modal-box-door {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px; 
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+/* Close button */
+.close-door {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Drag and Drop area */
+.drag-drop-box-door {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+/* Highlight when dragging */
+.drag-drop-box-door.dragging {
+  border-color: #4CAF50;
+  background-color: #e8f5e9;
+}
+
+/* Upload button */
+.upload-btn-door {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px; /* Reduced width */
+}
+
+.upload-btn-door:hover {
+  background-color: #45a049;
+}
+
+.modal-door {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content-door {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  max-width: 90%;
+}
+
+.drop-area-door {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.drop-area-door.dragging {
+  background-color: #f0f0f0;
+}
+
+.sidebar-buttons-container-door {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.sidebar-btn-door {
+  background-color: #006400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar-btn-door:hover {
+  background-color: #006400;
+}

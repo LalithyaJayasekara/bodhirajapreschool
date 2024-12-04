@@ -1,0 +1,233 @@
+/* General container styles */
+.events-container {
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background for the content area */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content container */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  margin-top: 40px; /* Add top margin to space out from other sections */
+}
+
+/* Horizontal scrolling container */
+.events-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align for better UI */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/* Enable scrolling for the event grid */
+.events-grid {
+  display: flex;
+  gap: 20px;
+  width: max-content; /* Ensure the grid takes up horizontal space to enable scrolling */
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+.event-square {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Subtle gradient for background */
+  border: 2px solid #006400; /* Theme color border */
+  border-radius: 15px; /* Increased border radius for a softer look */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1); /* Improved shadow for depth */
+  overflow: hidden;
+  width: 260px; /* Slightly wider for a balanced layout */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Added transition for smooth hover effect */
+  margin-bottom: 20px;
+  position: relative; /* Allows inner decorative elements */
+}
+
+.event-square:hover {
+  transform: scale(1.08); /* Slightly larger zoom effect on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  background: linear-gradient(145deg, #f9f9f9, #ffffff); /* Brighten on hover */
+}
+
+.event-image {
+  width: 100%;
+  height: 180px; /* Adjusted height for proportion */
+  object-fit: cover; /* Ensures the image fills the area */
+  border-bottom: 2px solid #006400;
+}
+
+.event-name {
+  font-size: 1.3em; /* Slightly larger font size */
+  color: #006400; /* Theme color */
+  text-align: center;
+  padding: 15px;
+  background-color: #eaf7ea; /* Softer green for better contrast */
+  font-weight: bold;
+  text-transform: uppercase; /* Makes the name stand out */
+  letter-spacing: 0.5px; /* Adds spacing for readability */
+}
+
+.event-name:hover {
+  text-decoration: underline; /* Add emphasis on hover */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.see-more-button {
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #006400, #007f00); /* Gradient for the button */
+  color: white;
+  border: none;
+  border-radius: 30px; /* Rounded button for modern look */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.see-more-button:hover {
+  background: linear-gradient(90deg, #004c00, #426e42); /* Darker gradient on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.event-square::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Decorative stripe */
+  background: linear-gradient(90deg, #133013, #709670); /* Matches theme */
+}
+
+.event-square::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 100%; /* Decorative stripe */
+  background: linear-gradient(180deg, #709670, #133013); /* Matches theme */
+}
+
+.no-image-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px; /* Same height as the image */
+  background-color: #f0f0f0;
+  color: #006400; /* Theme color */
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 2px solid #006400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.no-image-placeholder span {
+  color: #006400; /* Theme color */
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+.event-description-box {
+  background-color: #e6f5e6; /* Light green background */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #006400; /* Theme color border */
+  max-width: 800px;
+  width: 100%;
+  text-align: center; /* Center the text in the description box */
+  margin-left: auto;
+  margin-right: auto; /* Center the description box */
+}
+
+.event-description-box h3 {
+  color: #006400; /* Ensure the heading uses the theme color */
+  font-size: 1.5rem;
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.event-gallery {
+  display: flex;
+  justify-content: center; /* Center the gallery images */
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid #006400; /* Theme color */
+}
+
+/* Scrollbar styling */
+.events-content::-webkit-scrollbar {
+  height: 10px; /* Height of the scrollbar */
+}
+
+.events-content::-webkit-scrollbar-thumb {
+  background-color: #006400; /* Theme color for the scrollbar thumb */
+  border-radius: 5px;
+}
+
+.events-content::-webkit-scrollbar-track {
+  background-color: #e6f5e6; /* Light green track color */
+}
+
+/* Additional Responsiveness */
+@media (max-width: 768px) {
+  .events-grid {
+    flex-direction: column; /* Stack event cards on small screens */
+    align-items: center;
+  }
+
+  .event-square {
+    width: 100%;
+    max-width: 350px; /* Adjust the width on smaller screens */
+  }
+
+  .see-more-button {
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .event-description-box {
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  .gallery-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-name {
+    font-size: 1.1em;
+  }
+
+  .event-description-box h3 {
+    font-size: 1.3rem;
+  }
+
+  .see-more-button {
+    font-size: 0.9rem;
+  }
+}

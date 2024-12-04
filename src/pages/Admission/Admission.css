@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8f4; /* Light greenish background for the page */
+}
+
+.admissions-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Banner Section */
+.banner {
+  background: linear-gradient(135deg, #64b944, #3a7d4e); /* Beautiful green linear gradient */
+  color: white;
+  padding: 20px 20px 50px; /* Added margin top for spacing */
+  text-align: center;
+  border-bottom: 5px solid #387c44;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 110px;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.banner-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.banner-text {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-top: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Kindergarten Section */
+.kindergarten-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 30px;
+}
+
+.kindergarten {
+  width: 48%;
+  background-color: #f1fdf1;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.kindergarten:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.kindergarten-text {
+  background-color: #388e3c; /* Darker green */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.kindergarten-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.kindergarten-text span {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.kindergarten-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+}
+
+.kindergarten-image:hover {
+  transform: scale(1.05);
+}
+
+.kindergarten-description {
+  padding: 15px;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* Join Now Button */
+.join-now-button-container {
+  margin-top: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-now-button {
+  background: linear-gradient(135deg, #64b944, #3a7d4e); /* Gradient button */
+  color: white;
+  font-size: 1.4rem;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.join-now-button:hover {
+  background: linear-gradient(135deg, #3a7d4e, #64b944);
+  transform: scale(1.05);
+}
+
+
+
+.footer {
+  background-color: #006400;
+  color: white;
+  padding: 40px 20px; /* Larger padding for more space in the footer */
+  text-align: center;
+  border-top: 5px solid #004d00;
+}
+
+.footer-logo {
+  width: 60px; /* Increased logo size */
+  margin-bottom: 20px;
+}
+
+.footer-links nav a {
+  color: white; /* White links for better visibility */
+  font-weight: bold; /* Bold links for emphasis */
+  margin: 0 10px;
+}
+
+.footer-links nav a:hover {
+  color: #d6dc16; /* Add color on hover for links */
+}
+
+.email-p {
+  font-size: 1rem; /* Slightly increased footer text size */
+}
+
+.banner-title {
+  max-width: 1000px;
+  font-size: 2rem; /* Larger banner title */
+}
+
+.banner-text {
+  max-width: 700px;
+  font-size: 1.2rem; /* Larger banner text */
+}
+

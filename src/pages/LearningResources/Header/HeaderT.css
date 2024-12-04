@@ -1,0 +1,65 @@
+
+.main-header {
+    background-color:#65A66B; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    top: 0; 
+    z-index: 1000; 
+    margin-top: 100px;
+    width: 90%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbf9f9;
+    margin-bottom: 15px;
+  }
+  
+  
+  .main-header h1 {
+    font-size: 2.5em; 
+    margin: 0; 
+    font-family: 'Arial', sans-serif; 
+    color: #fbf9f9;
+  }
+  
+  
+  .main-header nav ul {
+  list-style-type: none; 
+    padding: 0; 
+    margin: 20px 0 0 0; 
+    display: flex;
+    justify-content: center; 
+  }
+  
+  
+  .main-header nav ul li {
+    margin: 0 15px; 
+  }
+  
+  
+  .main-header nav ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 1.1em;
+    transition: color 0.3s ease; 
+  }
+  
+ 
+  .main-header nav ul li a:hover {
+    color: #FFD700; 
+  }
+  
+  nav a {
+    color: white; /* Set the link color to white */
+    font-weight: bold; /* Make the font bold */
+    text-decoration: none; /* Remove the underline from links */
+    font-size: 1.2rem; /* Adjust font size for better readability */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  nav a:hover {
+    color: #d7e60d; /* Change the link color to a green shade on hover */
+  }

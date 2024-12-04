@@ -1,0 +1,125 @@
+.rare-profile-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  width: 250px;
+  z-index: 1000;
+}
+
+.rare-dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: white;
+  border-radius: 8px;
+  position: fixed; /* Fix the container to the screen */
+  left: 20px; /* Position it 20px from the left side */
+  top: 125px; /* Position it 100px from the top of the screen */
+  width: 1100px; /* Set a fixed width for the dashboard container */
+  height: 550px;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  flex-wrap: wrap;
+}
+
+.rare-header {
+  width: 100%; /* Make the header take up the full width of the screen */
+  position: fixed; /* Fix it to the top of the screen */
+  top: 0; /* Stick the header to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  padding: 0px; /* Add padding for spacing */
+  background-color: #2E582D; /* Set a background color for visibility */
+  font-size: 30px; /* Adjust font size */
+  color: white; /* Ensure text is visible */
+  text-align: right; /* Align the welcome message to the right */
+  box-sizing: border-box; /* Include padding within the element width */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.rare-marks-section {
+  width: 70%;
+}
+
+.rare-marks-box {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 140%; /* Set the width of the marks box to 60% of the dashboard */
+  margin-right: 20px; /* Add margin on the right side to separate from other elements */
+}
+
+.rare-marks-table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 100px; /* Decreased from 10% to 8% */
+
+}
+
+.rare-marks-table th, .rare-marks-table td {
+  border: 1px solid #020000;
+  padding: 8px;
+  text-align: center;
+}
+
+.rare-marks-table th {
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  font-size: 13.5px;
+}
+
+.rare-sidebar {
+  width: 250px; /* Match the width of the profile container */
+  background-color: #f4f4f4;
+  color: white;
+  padding: 20px; /* Match the padding of the profile container */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Match the box shadow for consistency */
+  position: fixed; /* Fix it to a specific position on the screen */
+  right: 20px; /* Position 20px from the right side */
+  bottom: 20px; /* Position 20px from the bottom */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.rare-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.rare-sidebar ul li {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #416a24;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.rare-sidebar ul li:hover {
+  background-color: #2E582D;
+}
+
+.rare-progress-link {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 25%;
+}
+
+.rare-progress-link:hover {
+  background-color: #45a049;
+}
+
+.rare-error-message {
+  color: red;
+  text-align: center;
+}

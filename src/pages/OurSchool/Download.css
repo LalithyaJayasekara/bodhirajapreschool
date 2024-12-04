@@ -1,0 +1,60 @@
+/* DownloadButton.css */
+.download-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .download-button {
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #d5e774;
+  }
+  
+  .download-links {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    flex-wrap: wrap; /* Wrap to the next line if there are too many items */
+    gap: 20px; /* Add space between the download items */
+  }
+  
+  .download-item {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  .download-button {
+    background-color: #006400; /* Theme color */
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .download-button:hover {
+    background-color: #004d00; /* Darker shade on hover */
+  }
+  
+  .download-button i {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Namespace all styles under .progress-report-page-suprise */
+.progress-report-page-suprise {
+  padding-top: 80px; /* Prevent content from going under the fixed title */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title styling specific to ProgressReportPageSuprise */
+.progress-report-page-suprise h2 {
+  font-size: 45px;
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #2E582D;
+  width: 100%; /* Full width */
+  height: 60px; /* Increased height */
+  display: flex;
+  align-items: center; /* Vertically center text */
+  justify-content: center; /* Horizontally center text */
+  position: fixed; /* Keep it fixed at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Chart styling specific to ProgressReportPageSuprise */
+#progress-chart-suprise {
+  margin: 20px 0;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button styling specific to ProgressReportPageSuprise */
+.progress-report-page-suprise button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #2E582D;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 300px;
+}
+
+.progress-report-page-suprise button:hover {
+  background-color: #45a049;
+}
+
+.progress-report-page-suprise button:focus {
+  outline: none;
+}
+
+.progress-report-page-suprise button:active {
+  background-color: #3e8e41;
+}
+
+
+.go-back-btn-suprise {
+  background-color: #ccc;
+  margin-top: 10px;
+  color: black;
+}
+
+.go-back-btn-suprise:hover {
+  background-color: #999;
+}
+
+
+@media (max-width: 768px) {
+  #progress-chart-suprise {
+    width: 100%;
+    max-width: 100%;
+  }
+}
