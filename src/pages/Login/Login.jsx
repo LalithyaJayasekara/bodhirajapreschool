@@ -62,7 +62,7 @@ const Login = () => {
       }
 
       // New condition for users not found in either teachers or students
-      window.location.href = 'http://localhost:3001/dashboard'; 
+      window.location.href = 'http://localhost:3000/dashboard'; 
 
       setError('Username is incorrect.');
     } catch (error) {
