@@ -80,52 +80,51 @@ function ResetPassword() {
     };
 
     return (
-            <div className="reset-container">
+        <div className="reset-container">
             <div className="reset-box">
                 <h2>Reset Password</h2>
                 <form onSubmit={handleResetPassword}>
-                <div className="input-container">
-                    <label>Current Password</label>
-                    <input
-                    type="password"
-                    value={currentPassword}
-                    onChange={(e) => setCurrentPassword(e.target.value)}
-                    required
-                    />
-                </div>
+                    <div className="input-container">
+                        <label>Current Password</label>
+                        <input
+                            type="password"
+                            value={currentPassword}
+                            onChange={(e) => setCurrentPassword(e.target.value)}
+                            required
+                        />
+                    </div>
 
-                <div className="input-container">
-                    <label>New Password</label>
-                    <input
-                    type="password"
-                    value={newPassword}
-                    onChange={(e) => setNewPassword(e.target.value)}
-                    required
-                    />
-                </div>
+                    <div className="input-container">
+                        <label>New Password</label>
+                        <input
+                            type="password"
+                            value={newPassword}
+                            onChange={(e) => setNewPassword(e.target.value)}
+                            required
+                        />
+                    </div>
 
-                <div className="input-container">
-                    <label>Re-Enter New Password</label>
-                    <input
-                    type="password"
-                    value={reEnterNewPassword}
-                    onChange={(e) => setReEnterNewPassword(e.target.value)}
-                    required
-                    />
-                </div>
+                    <div className="input-container">
+                        <label>Re-Enter New Password</label>
+                        <input
+                            type="password"
+                            value={reEnterNewPassword}
+                            onChange={(e) => setReEnterNewPassword(e.target.value)}
+                            required
+                        />
+                    </div>
 
-                <button type="submit" className="reset-button">RESET</button>
+                    <button type="submit" className="reset-button">RESET</button>
 
-                <div className="back-to-login">
-                    <a href="/login">&lt;back to login</a>
-                </div>
+                    <div className="back-to-login">
+                        <a href="/login">&lt;back to login</a>
+                    </div>
 
-                {error && <p className="error-message">{error}</p>}
-                {success && <p className="success-message">{success}</p>}
+                    {error && <p className="error-message">{error}</p>}
+                    {success && <p className="success-message">{success}</p>}
                 </form>
             </div>
-            </div>
-
+        </div>
     );
 }
 
